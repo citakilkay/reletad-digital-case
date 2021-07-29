@@ -1,0 +1,85 @@
+html,
+body {
+  margin: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app__table {
+  min-width: 1000px;
+  overflow-x: scroll;
+}
+
+.app__header {
+  border-bottom: 1px solid gray;
+}
+
+.app__header-row {
+  text-align: left;
+}
+
+.app__header-col.-center {
+  text-align: center;
+}
+
+.app__arrow {
+  width: 1rem;
+  height: auto;
+  position: relative;
+  top: 3px;
+}
+
+.app__arrow.-up {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.app__body-row {
+  line-height: 3rem;
+}
+
+.app__body-col.-center {
+  text-align: center;
+}
+
+.app__btn-edit {
+  background-color: #006fff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 6rem;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-right: 0.5rem;
+}
+
+.app__btn-delete {
+  background-color: #b70b0b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 6rem;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+/*# sourceMappingURL=main.css.map */
