@@ -73,8 +73,7 @@ const Dashboard = () => {
                 <tbody className="app__body">
                     {currentTodos.map(todo => {
                         // eslint-disable-next-line eqeqeq
-                        const todoUser = users.find(user => user.id == todo.userId);
-                        console.log(todoUser);
+                        const todoUser = users.find(user => user.id == todo.userId) || 'todoUser';
                         const assignee = todoUser.name;
                         return (
                             <TodoObject todo={todo} key={todo.id} setIsModalActive={setIsModalActive}
