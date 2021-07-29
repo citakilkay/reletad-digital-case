@@ -1,0 +1,130 @@
+@import '../variables';
+
+html,
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 1350px; // I gave min-width to the app and columns to make the specified design.
+
+    // Because a separate design is not given for mobile, I thought it would be the most appropriate solution to have a scroll on the x-axis without changing the design.
+    &__title {}
+
+    &__table {}
+
+    &__header {
+        &-row {
+            text-align: left;
+        }
+
+        &-col {
+            &.-id {
+                min-width: 72px;
+                text-align: center;
+            }
+
+            &.-title {
+                min-width: 500px;
+            }
+
+            &.-assignee {
+                min-width: 212px;
+            }
+
+            &.-status {
+                min-width: 94px;
+                text-align: center;
+            }
+
+            &.-action {
+                min-width: 470px;
+                text-align: center;
+            }
+        }
+    }
+
+    &__arrow {
+        width: 1rem;
+        height: auto;
+        position: relative;
+        top: 3px;
+
+        &.-up {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__body {
+        &-row {
+            line-height: 3rem;
+        }
+
+        &-col {
+            &.-id {
+                min-width: 72px;
+                text-align: center;
+            }
+
+            &.-title {
+                min-width: 500px;
+            }
+
+            &.-assignee {
+                min-width: 212px;
+            }
+
+            &.-status {
+                min-width: 94px;
+                text-align: center;
+            }
+
+            &.-action {
+                min-width: 470px;
+                text-align: center;
+            }
+        }
+    }
+
+    &__btn-edit {
+        background-color: $blue-ribbon;
+        color: $white-color;
+        border: none;
+
+        &:hover {
+            border: 1px solid $tundora-color;
+            cursor: pointer;
+        }
+
+        border-radius: 5px;
+        width: 6rem;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        margin-right: 0.5rem;
+    }
+
+    &__btn-delete {
+        background-color: $milano-red;
+        color: $white-color;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            border: 1px solid $tundora-color;
+        }
+
+        border-radius: 5px;
+        width: 6rem;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+}

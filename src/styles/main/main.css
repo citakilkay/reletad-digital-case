@@ -23,22 +23,33 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.app__table {
-  min-width: 1000px;
-  overflow-x: scroll;
-}
-
-.app__header {
-  border-bottom: 1px solid gray;
+  min-width: 1350px;
 }
 
 .app__header-row {
   text-align: left;
 }
 
-.app__header-col.-center {
+.app__header-col.-id {
+  min-width: 72px;
+  text-align: center;
+}
+
+.app__header-col.-title {
+  min-width: 500px;
+}
+
+.app__header-col.-assignee {
+  min-width: 212px;
+}
+
+.app__header-col.-status {
+  min-width: 94px;
+  text-align: center;
+}
+
+.app__header-col.-action {
+  min-width: 470px;
   text-align: center;
 }
 
@@ -58,13 +69,32 @@ body {
   line-height: 3rem;
 }
 
-.app__body-col.-center {
+.app__body-col.-id {
+  min-width: 72px;
+  text-align: center;
+}
+
+.app__body-col.-title {
+  min-width: 500px;
+}
+
+.app__body-col.-assignee {
+  min-width: 212px;
+}
+
+.app__body-col.-status {
+  min-width: 94px;
+  text-align: center;
+}
+
+.app__body-col.-action {
+  min-width: 470px;
   text-align: center;
 }
 
 .app__btn-edit {
   background-color: #006fff;
-  color: white;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   width: 6rem;
@@ -73,13 +103,23 @@ body {
   margin-right: 0.5rem;
 }
 
+.app__btn-edit:hover {
+  border: 1px solid #424242;
+  cursor: pointer;
+}
+
 .app__btn-delete {
   background-color: #b70b0b;
-  color: white;
+  color: #ffffff;
   border: none;
+  cursor: pointer;
   border-radius: 5px;
   width: 6rem;
   padding-top: 3px;
   padding-bottom: 3px;
+}
+
+.app__btn-delete:hover {
+  border: 1px solid #424242;
 }
 /*# sourceMappingURL=main.css.map */

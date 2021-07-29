@@ -1,0 +1,45 @@
+@import '../variables';
+
+.pagination {
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    &__item {
+        background-color: $gallery-color;
+        margin-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        border-radius: 4px;
+        color: $black-color;
+
+        &.-active {
+            background-color: $blue-ribbon;
+            color: $white-color;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &__btn {
+        text-decoration: none;
+        color: inherit;
+
+        &.-disabled {
+            color: gray;
+
+            &:hover {
+                cursor: not-allowed;
+            }
+        }
+    }
+}

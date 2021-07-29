@@ -1,0 +1,62 @@
+@import '../variables';
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto; // Enable scroll if needed
+    width: 25rem;
+    height: 15rem;
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: $gallery-color;
+
+    &.-active {
+        display: block;
+    }
+
+    &__field {
+        margin-bottom: 1rem;
+    }
+
+    &__label {
+        &.-title {
+            display: block;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        line-height: 1.5rem;
+    }
+
+    &__buttons {
+        float: right;
+        margin-bottom: 1rem;
+    }
+
+    &__btn {
+        cursor: pointer;
+        color: $white-color;
+
+        &.-save {
+            border: none;
+            background-color: $milano-red;
+            border-radius: 5px;
+            width: 5rem;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-right: 0.5rem;
+        }
+
+        &.-cancel {
+            border: none;
+            background-color: $blue-ribbon;
+            border-radius: 5px;
+            width: 5rem;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    }
+}
